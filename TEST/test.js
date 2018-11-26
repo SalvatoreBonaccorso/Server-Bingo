@@ -18,7 +18,7 @@ describe("vogliamo testare l'estrazione", function() {
         });
     });
 
-    it('voglio verificare il corretto funzionamento di numbers', function(done) {
+    it('voglio verificare il corretto funzionamento di Numbers_', function(done) {
         //request simula il comportamento di una chiamata API
         request(app)
         .get('/numbers/4')
@@ -32,7 +32,7 @@ describe("vogliamo testare l'estrazione", function() {
         });
     });
 
-    it('voglio verificare il corretto funzionamento di numbers', function(done) {
+    it('voglio verificare il corretto funzionamento di Numbers__', function(done) {
         //request simula il comportamento di una chiamata API
         request(app)
         .get('/numbers/pippo')

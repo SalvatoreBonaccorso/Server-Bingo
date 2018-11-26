@@ -15,7 +15,7 @@ app.get('/reset', function (req, res) {
 // verifico che un numero sia uscito o meno
 app.get('/numbers/:number', function (req, res) {
     var number = validator.toInt(req.params.number);
-    if (validator.isInt(number)) {
+    if (validator.isInt('number') || validator.isAlpha(req.params.number)) {
         return res.status(400).json({message: number + ' is not a number'});
     }
     res.json({extracted:bingo.getExtracted().indexOf(number) >=0});
@@ -30,6 +30,6 @@ app.get('/numbers', function (req, res) {
     // altrimenti se la req.query è true mi ritorna tutti i numeri estratti
     return res.json(bingo.getExtracted());
 })
-app.listen(3001);
+app.listen(3011);
 
 module.exports = app;
