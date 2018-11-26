@@ -1,0 +1,21 @@
+{
+  "name": "serverbingo",
+  "version": "1.0.0",
+  "description": "a simple version of bingo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bingo"
+  ],
+  "author": "salvatore bonaccorso <salvo.bonaccorso89@gmail.it>",
+  "license": "MIT",
+  "dependencies": {
+    "bingo-extract": "^2.0.1",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  },
+  "devDependencies": {}
+}
