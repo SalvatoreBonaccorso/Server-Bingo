@@ -37,7 +37,7 @@ describe("vogliamo testare l'estrazione", function() {
         .get('/numbers/pippo')
         .expect(400) // verifico lo status
         // lancia una funzione di callback dove da parametro inseriamo
-        // il prima valore un eventuale errore il secondo parametro è la risposta 
+        // il prima valore un eventuale errore il secondo parametro è la risposta
         .end(function(err,res){
             done(err);
         });
