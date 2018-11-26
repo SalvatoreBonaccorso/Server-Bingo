@@ -4,7 +4,7 @@ var bingo = require('bingo-extract');
 var app = exp();
 // mi ritorna i numeri estratti
 app.get('/extract', function (req, res) {
-    res.json({ message: 'This is a numbers extract : ' + bingo.extract() });
+    res.json(bingo.extract());
 })
 // riavvia una nuova partita
 app.get('/reset', function (req, res) {
@@ -27,3 +27,5 @@ app.get('/numbers', function (req, res) {
     return res.json(bingo.getExtracted());
 })
 app.listen(3001);
+
+module.exports = app;
